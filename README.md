@@ -103,7 +103,9 @@ Note: The `build` target automatically cleans up intermediate artifacts.
 
 Exclusions will be your way of cleaning up everything that is not games/binaries you want to track. This process will be tedious at first, e.g. on my mac, I'm above 500 exclusions, and still new ones appear from time to time.
 
-Create a `exclusions.json` file in the data directory to exclude processes whose names start with the specified prefixes:
+Exclusions are partial-matches, based on the start of the process. e.g. `xbox` will match any process starting with `xbox`, but not `an xbox process`.
+
+Create a `exclusions.json` file in the data directory to exclude processes whose names **start with** the specified prefixes:
 
 **Data Directory Location:**
 - macOS: `~/Library/Application Support/GameTimeTracker/`

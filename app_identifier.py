@@ -124,6 +124,8 @@ def _normalized_app_name(exe_path: str, proc_name: str) -> str:
 def _proc_identity(proc: psutil.Process, exclude_substrings: list[str], aliases: dict[str, str]) -> str | None:
     """
     Extract a normalized identity from a process, applying exclusions and aliases.
+    - Exclusions allow for partial matches at the start of the name.
+    - Aliases map normalized names (exact match) to preferred forms.
     """
     try:
         name = proc.name() or ""
