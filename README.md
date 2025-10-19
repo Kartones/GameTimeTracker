@@ -101,7 +101,7 @@ Note: The `build` target automatically cleans up intermediate artifacts.
 
 ### Exclusions
 
-Exclusions will be your way of cleaning up everything that are not games/binaries you want to track. This process will be tedious at first, e.g. on my mac, I'm above 500 exclusions, and still new ones appear from time to time.
+Exclusions will be your way of cleaning up everything that is not games/binaries you want to track. This process will be tedious at first, e.g. on my mac, I'm above 500 exclusions, and still new ones appear from time to time.
 
 Create a `exclusions.json` file in the data directory to exclude processes whose names start with the specified prefixes:
 
